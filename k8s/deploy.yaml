@@ -6,7 +6,7 @@ metadata:
   labels:
     app: hello
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: hello
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: hello
-          image: httpd:latest
+          image: httpd:2.4.57
           ports:
             - containerPort: 80
           readinessProbe:
