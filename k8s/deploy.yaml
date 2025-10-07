@@ -1,3 +1,4 @@
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-deploy
@@ -25,3 +26,4 @@ spec:
               port: 80
             initialDelaySeconds: 5
             periodSeconds: 10
+
