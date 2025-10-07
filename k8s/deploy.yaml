@@ -1,4 +1,3 @@
-apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-deploy
@@ -17,7 +16,7 @@ spec:
     spec:
       containers:
         - name: hello
-          image: nginx:stable
+          image: httpd:latest
           ports:
             - containerPort: 80
           readinessProbe:
