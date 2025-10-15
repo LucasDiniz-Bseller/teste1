@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-deploy
+spec:
+  template:
+    spec:
+      containers:
+        - name: hello
+          envFrom:
+            - configMapRef:
+                name: hello-env
