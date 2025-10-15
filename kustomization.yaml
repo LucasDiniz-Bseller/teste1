@@ -1,0 +1,10 @@
+resources:
+  - deployment.yaml
+
+configMapGenerator:
+  - name: hello-env
+    envs:
+      - env.env
+
+patchesStrategicMerge:
+  - patch-env.yaml
