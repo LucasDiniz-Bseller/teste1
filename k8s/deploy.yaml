@@ -22,8 +22,8 @@ spec:
           ports:
             - containerPort: 80
           env:
-            - name: CUSTOM_MESSAGE
-              value: "{{CUSTOM_MESSAGE}}"
+            - name: CUSTOM_MESSAGE1
+              value: "{{CUSTOM_MESSAGE1}}"
           readinessProbe:
             httpGet:
               path: /
