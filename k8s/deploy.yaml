@@ -21,6 +21,9 @@ spec:
           image: httpd:2.4.57
           ports:
             - containerPort: 80
+          env:
+            - name: CUSTOM_MESSAGE
+              value: "{{CUSTOM_MESSAGE}}"
           readinessProbe:
             httpGet:
               path: /
