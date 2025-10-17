@@ -15,6 +15,9 @@ spec:
     spec:
       containers:
         - name: hello
-          image: httpd:2.4.57
+          image: httpd:latest
           ports:
             - containerPort: 80
+          env:
+            - name: teste
+              value: "jorge"
